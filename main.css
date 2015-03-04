@@ -1,0 +1,220 @@
+body {
+  background: url('web.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img.dykkersyke {
+  width: 26vw;
+  right: 2vw;
+  position: absolute;
+  top: 2vw;
+}
+
+img.cover {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+
+
+/* line 2, stdin */
+html, body {
+  height: 100%; }
+
+/* line 6, stdin
+body {
+  background: #09f;
+  background-image: -moz-linear-gradient(bottom, #0099ff, #45d1ff);
+  background-image: -webkit-linear-gradient(bottom, #0099ff, #45d1ff);
+  background-image: linear-gradient(to top, #0099ff, #45d1ff); }
+
+  */
+
+/* line 13, stdin */
+.bubble-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #333; }
+
+/* line 23, stdin */
+.bubble-toggle:hover {
+  background: rgba(255, 255, 255, 0.75); }
+
+/* line 27, stdin */
+.bubbles {
+  position: absolute;
+  left: 3vw;
+  bottom: 3vw;
+  width: 18vw;
+  height: 18vw;
+  border: 2px solid white;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+   -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+   transform: rotate(-10deg);
+  margin: 0 auto; }
+
+/* line 35, stdin */
+.bubble-container {
+  position: absolute;
+  bottom: 0;
+  -webkit-animation: bubblerise 4s infinite ease-in;
+  -moz-animation: bubblerise 4s infinite ease-in;
+  -ms-animation: bubblerise 4s infinite ease-in;
+  animation: bubblerise 4s infinite ease-in;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0; }
+
+/* line 46, stdin */
+.bubble {
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.25);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-animation: bubblewobble 0.4s infinite linear;
+  -moz-animation: bubblewobble 0.4s infinite linear;
+  -ms-animation: bubblewobble 0.4s infinite linear;
+  animation: bubblewobble 0.4s infinite linear; }
+
+@-webkit-keyframes bubblerise {
+  /* line 62, stdin */
+  0% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  /* line 67, stdin */
+  5% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1; }
+
+  /* line 72, stdin */
+  99% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1; }
+
+  /* line 76, stdin */
+  100% {
+    bottom: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; } }
+
+@-moz-keyframes bubblerise {
+  /* line 83, stdin */
+  0% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  /* line 88, stdin */
+  5% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1; }
+
+  /* line 93, stdin */
+  99% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1; }
+
+  /* line 97, stdin */
+  100% {
+    bottom: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; } }
+
+@-ms-keyframes bubblerise {
+  /* line 104, stdin */
+  0% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  /* line 109, stdin */
+  5% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1; }
+
+  /* line 114, stdin */
+  99% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1; }
+
+  /* line 118, stdin */
+  100% {
+    bottom: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; } }
+
+@keyframes bubblerise {
+  /* line 125, stdin */
+  0% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  /* line 130, stdin */
+  5% {
+    bottom: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1; }
+
+  /* line 135, stdin */
+  99% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1; }
+
+  /* line 139, stdin */
+  100% {
+    bottom: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; } }
+
+@-webkit-keyframes bubblewobble {
+  /* line 146, stdin */
+  0% {
+    margin-left: 0; }
+
+  /* line 149, stdin */
+  50% {
+    margin-left: 2px; } }
+
+@-moz-keyframes bubblewobble {
+  /* line 154, stdin */
+  0% {
+    margin-left: 0; }
+
+  /* line 157, stdin */
+  50% {
+    margin-left: 2px; } }
+
+@-ms-keyframes bubblewobble {
+  /* line 162, stdin */
+  0% {
+    margin-left: 0; }
+
+  /* line 165, stdin */
+  50% {
+    margin-left: 2px; } }
+
+@keyframes bubblewobble {
+  /* line 170, stdin */
+  0% {
+    margin-left: 0; }
+
+  /* line 173, stdin */
+  50% {
+    margin-left: 2px; } }

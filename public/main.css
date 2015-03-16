@@ -18,6 +18,10 @@ div.menuContainer {
   right: 0;
   position: absolute;
   align-items: flex-end;
+
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: flex-end; /* Safari 7.0+ */
+  -webkit-flex-direction: column;
 }
 
 div.menuChild {
@@ -90,11 +94,6 @@ div.container {
 
 
 
-
-
-/* line 2, stdin */
-html, body {
-  height: 100%; }
 
 /* line 13, stdin */
 .bubble-toggle {

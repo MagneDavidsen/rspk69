@@ -2,20 +2,61 @@ body {
   background: url('web.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  margin:0;
 }
 
-img.dykkersyke {
-  width: 26vw;
-  right: 2vw;
+img.dykkersykeLogo {
+
+  width: 100%;
+}
+
+div.menuContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  right: 0;
   position: absolute;
-  top: 2vw;
+  align-items: flex-end;
+}
+
+div.menuChild {
+  max-width: 60%;
+  margin: 4% 4% 0 0;
+}
+
+div.menu {
+  display: inline-block;
+  padding:3%;
+
+  margin-right: 13.7%;
+  background: white;
+  opacity: 0.6;
+  color: black;
+  font-family: "europa-1","europa-2";
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: right;
 }
 
 img.cover {
-  width: 100%;
-  left: 0;
+  width: 30vh;
+  max-width: 50vw;
+  max-height: 50vw;
+  height: 30vh;
+  border: 2px solid white;
+}
+
+div.container {
+  display: flex;
+  flex-direction: row;
   position: absolute;
-  top: 0;
+  bottom: 5vw;
+  left: 5vw;
+  color: #FFF;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+   -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+   transform: rotate(-10deg);
 }
 
 
@@ -51,14 +92,6 @@ body {
 /* line 27, stdin */
 .bubbles {
   position: absolute;
-  left: 3vw;
-  bottom: 3vw;
-  width: 18vw;
-  height: 18vw;
-  border: 2px solid white;
-  -ms-transform: rotate(-10deg); /* IE 9 */
-   -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
-   transform: rotate(-10deg);
   margin: 0 auto; }
 
 /* line 35, stdin */

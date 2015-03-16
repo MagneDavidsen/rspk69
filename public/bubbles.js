@@ -3,8 +3,8 @@ var $bubbles = $('.bubbles');
 function bubbles() {
 
   // Settings
-  var min_bubble_count = 20, // Minimum number of bubbles
-      max_bubble_count = 60, // Maximum number of bubbles
+  var min_bubble_count = 5, // Minimum number of bubbles
+      max_bubble_count = 30, // Maximum number of bubbles
       min_bubble_size = 3, // Smallest possible bubble diameter (px)
       max_bubble_size = 12; // Maximum bubble blur amount (px)
 

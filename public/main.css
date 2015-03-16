@@ -9,13 +9,12 @@ body {
 img.dykkersykeLogo {
   width: 100%;
   -webkit-filter: drop-shadow( -5px -5px 5px #000 );
-           filter: drop-shadow( -5px -5px 5px #000 );
+  filter: drop-shadow( -5px -5px 5px #000 );
 }
 
 div.menuContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   right: 0;
   position: absolute;
   align-items: flex-end;
@@ -31,7 +30,6 @@ iframe {
   position: absolute;
   bottom: 0;
   height: 20px;
-  border-top: 1px solid white;
   background: black;
   opacity: 0.6;
 
@@ -45,7 +43,6 @@ div.menu {
   color: white;
   font-family: "europa-1","europa-2";
   font-weight: bold;
-
   text-align: right;
 }
 
@@ -64,7 +61,7 @@ div.container {
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: 60px;
+  bottom: 50px;
   left: 5vh;
   color: #FFF;
   -ms-transform: rotate(-10deg); /* IE 9 */
@@ -95,25 +92,9 @@ div.container {
 
 
 
-
-
-
-
-
-
-
 /* line 2, stdin */
 html, body {
   height: 100%; }
-
-/* line 6, stdin
-body {
-  background: #09f;
-  background-image: -moz-linear-gradient(bottom, #0099ff, #45d1ff);
-  background-image: -webkit-linear-gradient(bottom, #0099ff, #45d1ff);
-  background-image: linear-gradient(to top, #0099ff, #45d1ff); }
-
-  */
 
 /* line 13, stdin */
 .bubble-toggle {

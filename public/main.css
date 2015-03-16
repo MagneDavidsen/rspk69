@@ -9,7 +9,7 @@ body {
 img.dykkersykeLogo {
   width: 100%;
   -webkit-filter: drop-shadow( -5px -5px 5px #000 );
-           filter: drop-shadow( -5px -5px 5px #000 ); /* Same syntax as box-shadow */
+           filter: drop-shadow( -5px -5px 5px #000 );
 }
 
 div.menuContainer {
@@ -22,15 +22,15 @@ div.menuContainer {
 }
 
 div.menuChild {
-  max-width: 70%;
+  max-width: 90%;
+  width: 320px;
   margin: 8% 4% 0 0;
 }
 
 div.menu {
   display: inline-block;
-
-
-  margin-right: 17.7%;
+  margin: 8% 12% 0 0;
+  max-width: 640px;
   text-shadow: -3px -3px 5px #000000;
   color: white;
   font-family: "europa-1","europa-2";
@@ -47,6 +47,7 @@ img.cover {
   max-height: 55vw;
 
   border: 2px solid white;
+
 }
 
 div.container {

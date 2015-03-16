@@ -7,8 +7,9 @@ body {
 }
 
 img.dykkersykeLogo {
-
   width: 100%;
+  -webkit-filter: drop-shadow( -5px -5px 5px #000 );
+           filter: drop-shadow( -5px -5px 5px #000 ); /* Same syntax as box-shadow */
 }
 
 div.menuContainer {
@@ -21,29 +22,30 @@ div.menuContainer {
 }
 
 div.menuChild {
-  max-width: 60%;
-  margin: 4% 4% 0 0;
+  max-width: 70%;
+  margin: 8% 4% 0 0;
 }
 
 div.menu {
   display: inline-block;
-  padding:3%;
 
-  margin-right: 13.7%;
-  background: white;
-  opacity: 0.6;
-  color: black;
+
+  margin-right: 17.7%;
+  text-shadow: -3px -3px 5px #000000;
+  color: white;
   font-family: "europa-1","europa-2";
   font-weight: bold;
-  font-size: 2.5em;
+
   text-align: right;
 }
 
+
 img.cover {
-  width: 30vh;
-  max-width: 50vw;
-  max-height: 50vw;
-  height: 30vh;
+  width: 35vh;
+  height: 35vh;
+  max-width: 55vw;
+  max-height: 55vw;
+
   border: 2px solid white;
 }
 
@@ -51,13 +53,41 @@ div.container {
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: 5vw;
-  left: 5vw;
+  bottom: 5vh;
+  left: 5vh;
   color: #FFF;
   -ms-transform: rotate(-10deg); /* IE 9 */
    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
    transform: rotate(-10deg);
 }
+
+@media (min-width : 320px) {
+  div.menu {
+    font-size: 2em;
+  }
+}
+@media (min-width : 640px) {
+  div.menu {
+    font-size: 3em;
+  }
+}
+@media (min-width : 1024px) {
+  div.menu {
+    font-size: 4em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
